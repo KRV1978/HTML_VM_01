@@ -1,0 +1,171 @@
+<!-- основний файл в проекті - index.html -->
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>Текст HTML</title>
+	</head>
+	
+	<body>
+		<!--- коментарі-->
+
+
+		<!-- Заголовок рівня h1 -->
+			<!-- Можливі рівні заголовків - h1, h2, h3, h4, h5 -->
+		<h1>Вивчення HTML</h1>
+		<h2>Владілен Мінін</h2>
+
+
+		<!-- горизонтальна лінія -->
+		<hr />
+
+		<!-- текст в параграфі -->
+		<p>Це параграф. В ньому зручно записвати текст. <br />
+		В середині тексту можна використовувати інші теги.
+		Але обов'язково дотримуватися вкладеності тегів. </p>
+		
+		<!-- Вставлення картинки (зовнішнє розміщення картинки) -->
+			<!-- "width" - довжина в px -->
+		<img src="https://klike.net/uploads/posts/2021-01/1611131129_1.jpg" width=200/>
+
+		<!-- Атрибути  горизонтальної лінії-->
+			<!-- "size" - товщина -->
+			<!-- "noshade" - без тіні -->
+			<!-- "width" - довжина в px -->
+			<!-- "color" - колір -->
+		<hr size="2" noshade width="800" color="silver"/>		
+
+		
+		<h3>Корисні посилання</h3>
+		
+		<!-- посилання -->
+		<a href="https://developer.mozilla.org/ru/docs/Web/HTML">developer.mozilla</a>
+	
+		<!-- Перевід строки -->
+		<br />
+		
+		<!-- Тип відкриття сторінки - атрибут "target" -->
+		<a href="https://html5css.ru/tags/default.php" target="_blank">HTML5CSS</a>
+		<br />
+
+		<hr size="5" noshade width="800" color="black"/>			
+		
+		<!-- Вставлення картинки (внутрішнє розміщення картинки) -->
+			<!-- "alt" - альтернативний текст - якщо картинка не знайдена -->
+		<img src="001.jpg" width=150 alt="Цікаве дерево"/>
+		
+		<h2>Плагіни для VSCode</h2>
+		
+		<!-- Текст жирний -->
+		<strong>Оформлення</strong>
+		
+		<!-- Список простий -->
+		<ul>
+			<li>Auto Close Tag</li>
+			<li>Auto Rename Tag </li>
+			<li>Bracket Pair Colorizer 2</li>
+			<li>Prettier - code formatter</li>
+			<li>VScode-icons</li>
+		</ul>
+	
+		<strong>Відкриття файлу</strong>	
+		<ol>
+			<li>Live Server - </strong>
+			<!-- Текст похилий -->
+			<em>(відкрити правою кнопку миші)</em></li>
+			<li>Open in Browser - </li>
+			<!-- встроєнний список в іншом списку -->
+			<ul>
+				<li><em>(відкрити правою кнопку миші)</em></li>
+			</ul>
+		</ol>
+
+		<hr size="3" noshade color="silver"/>		
+
+
+		<!-- Таблиця -->
+		<h3>Таблиця</h3>
+		<table border="1">
+			<!-- заголовок -->
+			<tr>
+				<th>Заголовок 1</th>
+				<th>Заголовок 2</th>
+				<th>Заголовок 3</th>
+			</tr>
+			<!-- основна частина -->
+			<tr>
+				<td>Рядок 1</td>
+				<td>Стовпчик 1</td>
+				<td>стовпчик 2</td>
+			</tr>
+			<tr>
+				<td>Рядок 2</td>
+				<td>Стовпчик 1</td>
+				<td>стовпчик 2</td>
+			</tr>
+		</table>
+		
+		<hr size="3" noshade color="green"/>	
+		
+		<!-- Форми в документі -->
+		<h2>Форми в документі</h2>
+		<form>
+			<!--Текстове поле з назвою-->
+			<!--Прив'язуємо назву до текстового поля через "id"-->
+			<label for="name">Ваше ім'я</label>
+			<input type="text" id="name" placeholder="Введіть ваше ім'я">
+			<br />
+			
+			<!--Текстове поле з E-mailom-->
+			<label for="email">Ваше e-mail</label>
+			<input type="email" id="email" placeholder="Введіть e-mail">
+			<br />
+			
+			<!--Текстове поле з числами-->
+			<label for="number">Ваше число</label>
+			<input type="number" id="number">
+			<br />
+
+			<!--Текстове поле - пароль-->
+			<label for="password">Пароль</label>
+			<input type="password" id="password">
+			<br />
+
+			<!--Вибір кольору-->
+			<label for="color">Виберіть кольор</label>
+			<input type="color" id="color">
+			<br />
+
+			<!--Вибір дати-->
+			<label for="date">Введіть дату</label>
+			<input type="date" id="date">
+			<br />
+
+			<!--Рівень-->
+			<label for="range"></label>
+			<input type="range" id="range">
+			<br />
+
+			<!--Чекбокс-->
+			<label for="checkbox">Чекбокс</label>
+			<input type="checkbox" id="checkbox">
+			<br />
+
+			<!--Кнопка-->
+			<input type="submit" value="ЗВ'ЯЗОК">
+			<br />
+
+			<!--Повідомлення-->
+			<label for="text">Текст</label>
+			<br />
+			<textarea id="text" rows="2" cols="20"></textarea>
+		</form>
+
+
+	</body>
+
+</html>
+
+
